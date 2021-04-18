@@ -63,7 +63,7 @@ self.addEventListener("fetch", function(evt) {
 
     return;
   }
-
+  // Evt pust 
   evt.respondWith(
     caches.open(CACHE_NAME).then(cache => {
       return cache.match(evt.request).then(response => {
